@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetsuya — Customer Success Engineer</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-secondary: #555;
+      --bg: #ffffff;
+      --accent: #2563eb;
+      --muted: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 120px 0 80px;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+    }
+
+    /* Sections */
+    section {
+      padding: 64px 0;
+      border-top: 1px solid #eee;
+    }
+
+    section h2 {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    /* About */
+    .about p {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      max-width: 560px;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 32px;
+    }
+
+    .job h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .job .company {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .job .period {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .job ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .job li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .job li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #ccc;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: var(--muted);
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* Contact */
+    .contact p {
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .contact a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .contact a:hover {
+      border-color: var(--text);
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 80px 0 60px;
+      }
+      section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tetsuya</h1>
+      <p>Customer Success Engineer at <span style="color: var(--accent); font-weight: 500;">ai&amp;</span>. Helping customers succeed through technical excellence and genuine relationships.</p>
+    </header>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>I bridge the gap between technology and people. As a Customer Success Engineer, I ensure clients get maximum value from their tools&mdash;combining deep product knowledge with a passion for problem-solving and human connection.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Customer Success Engineer</h3>
+        <div class="company">ai&amp;</div>
+        <div class="period">Present</div>
+        <ul>
+          <li>Lead technical onboarding for enterprise customers</li>
+          <li>Drive product adoption and reduce churn through proactive engagement</li>
+          <li>Collaborate with engineering to translate customer feedback into product improvements</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Customer Onboarding</span>
+        <span class="skill-tag">Technical Troubleshooting</span>
+        <span class="skill-tag">SaaS Platforms</span>
+        <span class="skill-tag">Relationship Management</span>
+        <span class="skill-tag">Data Analysis</span>
+        <span class="skill-tag">APIs &amp; Integrations</span>
+        <span class="skill-tag">Project Management</span>
+        <span class="skill-tag">Cross-functional Collaboration</span>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Open to conversations about customer success, tech, and everything in between.</p>
+      <p>
+        <a href="mailto:hello@example.com">hello@example.com</a> ·
+        <a href="#">LinkedIn</a>
+      </p>
+    </section>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Tetsuya
+    </footer>
+  </div>
+</body>
+</html>
